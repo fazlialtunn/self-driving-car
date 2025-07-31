@@ -13,6 +13,7 @@ This project includes:
 
 ## 📁 Project Structure
 
+```
 self-driving-car/
 ├── model/
 │   └── model.h5                # Trained deep learning model
@@ -22,6 +23,7 @@ self-driving-car/
 ├── app.py                      # Real-time inference server
 ├── train.py                    # Data loading, augmentation, and model training
 └── README.md
+```
 
 ## 📦 Installation
 
