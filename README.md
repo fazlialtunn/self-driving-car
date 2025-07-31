@@ -13,6 +13,7 @@ This project includes:
 
 ## 📁 Project Structure
 
+self-driving-car/
 ├── model/
 │   └── model.h5                # Trained deep learning model
 ├── track/                      # Driving dataset (downloaded from Udacity or similar)
@@ -25,36 +26,43 @@ This project includes:
 ## 📦 Installation
 
 1. Clone the repo:
-```bash
-git clone https://github.com/fazlialtunn/self-driving-car.git
-cd self-driving-car
 
-	2.	Create a virtual environment:
+    ```bash
+    git clone https://github.com/fazlialtunn/self-driving-car.git
+    cd self-driving-car
+    ```
 
-python -m venv venv
-source venv/bin/activate  # macOS/Linux
-venv\Scripts\activate     # Windows
+2. Create a virtual environment:
 
-	3.	Install dependencies:
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # macOS/Linux
+    venv\Scripts\activate     # Windows
+    ```
 
-pip install -r requirements.txt
+3. Install dependencies:
 
-Example dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-tensorflow
-keras
-opencv-python
-matplotlib
-pandas
-Flask
-python-socketio
-eventlet
-imgaug
+### Example dependencies:
 
-📥 Data Collection
+- tensorflow  
+- keras  
+- opencv-python  
+- matplotlib  
+- pandas  
+- Flask  
+- python-socketio  
+- eventlet  
+- imgaug  
+
+## 📥 Data Collection
 
 You can clone a public dataset:
 
+```bash
 git clone https://github.com/rslim087a/track
 
 Make sure driving_log.csv and the IMG/ folder are in the track/ directory.
@@ -75,7 +83,7 @@ You can customize the batch size, number of epochs, and augmentation probabiliti
 
 📈 Training Results
 	•	Validation Loss stabilized around 0.03
-	•	Plots of training and validation loss:
+	•	Plots of training and validation loss available
 
 🚀 Run the Inference Server
 
@@ -120,6 +128,7 @@ To download in Colab:
 from google.colab import files
 files.download('model.h5')
 
+
 ⸻
 
 🏁 Acknowledgements
@@ -134,4 +143,4 @@ files.download('model.h5')
 	•	Use RNNs or transformers for temporal modeling
 	•	Deploy on edge devices
 
----
+⸻
